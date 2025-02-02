@@ -135,7 +135,7 @@ public:
 
             "CREATE TABLE vaccination (vaccination_id INT PRIMARY KEY, citizen_id INT, vaccine_type TEXT NOT NULL, date_administered DATE NOT NULL, FOREIGN KEY (citizen_id) REFERENCES citizen(citizen_id));",
 
-            "CREATE TABLE census_data (census_id INT PRIMARY KEY, household_id INT, citizen_id INT, event_type TEXT NOT NULL, event_date DATE NOT NULL, FOREIGN KEY (household_id) REFERENCES household(household_id), FOREIGN KEY (citizen_id) REFERENCES citizen(citizen_id));"
+            "CREATE TABLE census_data (household_id INT, citizen_id INT, event_type TEXT NOT NULL, event_date DATE NOT NULL, FOREIGN KEY (household_id) REFERENCES household(household_id), FOREIGN KEY (citizen_id) REFERENCES citizen(citizen_id));"
         };
 
         std::vector<std::string> insert_data = {

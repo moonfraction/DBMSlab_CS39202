@@ -1,0 +1,86 @@
+DROP TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 10
+INSERT 0 31
+INSERT 0 10
+INSERT 0 15
+INSERT 0 15
+INSERT 0 5
+INSERT 0 9
+INSERT 0 6
+INSERT 0 10
+INSERT 0 41
+INSERT 0 4
+INSERT 0 15
+INSERT 0 5
+     name
+--------------
+ Amit Sharma
+ Anjali Gupta
+ Sneha Patel
+ Vikram Rao
+ Arjun Nair
+(5 rows)
+
+     name
+--------------
+ Anjali Gupta
+ Sneha Patel
+ Sunita Devi
+ Kamini Iyer
+ Child 3
+(5 rows)
+
+ total_acres
+-------------
+        4.80
+(1 row)
+
+ count
+-------
+     5
+(1 row)
+
+    name
+-------------
+ Amit Sharma
+ Vikram Rao
+ Arjun Nair
+(3 rows)
+
+    name
+-------------
+ Amit Sharma
+ Neha Singh
+ Rahul Kumar
+ Raj Patel
+ Child 1
+(5 rows)
+
+ count
+-------
+     4
+(1 row)
+
+ count
+-------
+     1
+(1 row)
+
+ count
+-------
+    11
+(1 row)
+
+ count
+-------
+    31
+(1 row)
