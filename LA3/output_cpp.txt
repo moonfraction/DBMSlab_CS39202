@@ -1,0 +1,49 @@
+Executing queries...
+
+Citizens with more than 1 acre of land:
+Amit Sharma
+Anjali Gupta
+Sneha Patel
+Vikram Rao
+Arjun Nair
+
+Female students with low household income:
+Anjali Gupta
+Sneha Patel
+Sunita Devi
+Kamini Iyer
+Child 3
+Child 5
+Child 9
+
+Total rice cultivation land:
+4.80
+
+Number of citizens born after 1.1.2000 with 10th class education:
+5
+
+Panchayat employees who hold more than 1 acre land:
+Amit Sharma
+Vikram Rao
+Arjun Nair
+
+Household members of Panchayat Pradhan:
+Amit Sharma
+Neha Singh
+Rahul Kumar
+Raj Patel
+Child 1
+
+Street lights installed in Phulera in 2024:
+4
+
+Vaccinations for children of 10th pass citizens in 2024:
+1
+
+Total births in 2024:
+11
+
+Citizens in households with panchayat employees:
+31
+
+All queries executed successfully.

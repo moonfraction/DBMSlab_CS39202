@@ -1,0 +1,77 @@
+Connected to database successfully
+
+
+Query 1:
+ name
+---------------
+ Amit Sharma
+ Anjali Gupta
+ Sneha Patel
+ Vikram Rao
+ Arjun Nair
+(5 rows)
+
+Query 2:
+ name
+---------------
+ Anjali Gupta
+ Sneha Patel
+ Sunita Devi
+ Kamini Iyer
+ Child 1
+ Child 9
+(6 rows)
+
+Query 3:
+ total_acres
+--------------
+ 4.80
+(1 rows)
+
+Query 4:
+ count
+--------
+ 5
+(1 rows)
+
+Query 5:
+ name
+--------------
+ Amit Sharma
+ Vikram Rao
+ Arjun Nair
+(3 rows)
+
+Query 6:
+ name
+--------------
+ Amit Sharma
+ Neha Singh
+ Rahul Kumar
+ Raj Patel
+ Child 1
+(5 rows)
+
+Query 7:
+ count
+--------
+ 4
+(1 rows)
+
+Query 8:
+ count
+--------
+ 1
+(1 rows)
+
+Query 9:
+ count
+--------
+ 11
+(1 rows)
+
+Query 10:
+ count
+--------
+ 31
+(1 rows)
