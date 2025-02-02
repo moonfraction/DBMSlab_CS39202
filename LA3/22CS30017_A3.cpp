@@ -78,42 +78,6 @@ public:
         return true;
     }
 
-    void execute_select_query(const std::string& query, const std::string& description) {
-        std::cout << "\n" << description << ":\n";
-        SQLRETURN ret = SQLExecDirect(stmt, (SQLCHAR*)query.c_str(), SQL_NTS);
-        
-        if (SQL_SUCCEEDED(ret)) {
-            SQLCHAR result[256];
-            SQLLEN indicator;
-            
-            while (SQL_SUCCEEDED(SQLFetch(stmt))) {
-                ret = SQLGetData(stmt, 1, SQL_C_CHAR, result, sizeof(result), &indicator);
-                if (SQL_SUCCEEDED(ret) && indicator != SQL_NULL_DATA) {
-                    std::cout << result << "\n";
-                }
-            }
-        } else {
-            SQLError::extract_error("SQLExecDirect", stmt, SQL_HANDLE_STMT);
-        }
-        SQLCloseCursor(stmt);
-    }
-
-    void execute_aggregate_query(const std::string& query, const std::string& description) {
-        std::cout << "\n" << description << ":\n";
-        SQLRETURN ret = SQLExecDirect(stmt, (SQLCHAR*)query.c_str(), SQL_NTS);
-        
-        if (SQL_SUCCEEDED(ret) && SQL_SUCCEEDED(SQLFetch(stmt))) {
-            SQLINTEGER result;
-            SQLLEN indicator;
-            ret = SQLGetData(stmt, 1, SQL_C_LONG, &result, 0, &indicator);
-            if (SQL_SUCCEEDED(ret) && indicator != SQL_NULL_DATA) {
-                std::cout << result << "\n";
-            }
-        } else {
-            SQLError::extract_error("SQLExecDirect", stmt, SQL_HANDLE_STMT);
-        }
-        SQLCloseCursor(stmt);
-    }
 
     void setup_database() {
         std::vector<std::string> create_tables = {
