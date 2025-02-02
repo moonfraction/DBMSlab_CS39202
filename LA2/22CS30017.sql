@@ -318,8 +318,8 @@ SELECT count(DISTINCT c.citizen_id) as count
     WHERE c.education_qualification = '10th' -- Filter citizens with education qualification of class 10
         AND v.date_administered >= '2024-01-01' -- Filter vaccinations administered in 2024
         AND v.date_administered <= '2024-12-31'
-        AND c2.date_of_birth > c.date_of_birth; -- Filter children of the citizens
-
+        AND c2.date_of_birth > c.date_of_birth -- Filter children of the citizens
+        AND EXTRACT(YEAR FROM AGE(c2.date_of_birth)) < 18; -- Check if child's age is less than 18
     
 -- Total number of births of boy child in the year 2024
 SELECT count(event_type) as count

@@ -447,12 +447,17 @@ def execute_queries(cursor):
 
     ]
 
-    headers = [
-        "Citizens with more than 1 acre of land:",
-        "Female students with household income < 1 Lakh:",
-        "Total land cultivating rice:",
-        # Add remaining headers...
-    ]
+    # headers = [
+    #     "Citizens with more than 1 acre of land:",
+    #     "Female students with household income < 1 Lakh:",
+    #     "Total land cultivating rice:",
+    #     "Citizens born after 1.1.2000 with 10th class education:",
+    #     "Employees of panchayat with more than 1 acre land:",
+    #     "Household members of Panchayat Pradhan:",
+    #     "Street light assets in Phulera installed in 2024:",
+    #     "Vaccinations in 2024 for children of class 10 citizens:",
+
+    # ]
 
     # Execute each query
     for i, query in enumerate(queries):
