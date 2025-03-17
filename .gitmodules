@@ -1,0 +1,3 @@
+[submodule "LA4/gramPanchayat"]
+	path = LA4/gramPanchayat
+	url = https://github.com/DBMS-ACHA/Gram_panchayat.git
