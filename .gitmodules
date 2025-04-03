@@ -1,3 +1,6 @@
 [submodule "LA4/gramPanchayat"]
 	path = LA4/gramPanchayat
 	url = https://github.com/DBMS-ACHA/Gram_panchayat.git
+[submodule "Term_project/Concurrency_manager"]
+	path = Term_project/Concurrency_manager
+	url = https://github.com/DBMS-ACHA/Concurrency_Manager.git
