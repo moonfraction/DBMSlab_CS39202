@@ -9,6 +9,7 @@ node_modules/
 *.o
 *.so
 *.out
+.vscode
 
 # Ignore system files
 .DS_Store
